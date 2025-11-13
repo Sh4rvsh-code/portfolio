@@ -2,8 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
+    "build": "cd frontend && npm run build && cd .. && cp -r frontend/dist ./dist",
     "dev": "cd frontend && npm run dev",
-    "preview": "cd frontend && npm run preview"
+    "preview": "cd frontend && npm run preview",
+    "install": "cd frontend && npm install"
   }
 }
